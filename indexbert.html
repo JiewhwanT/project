@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- js-->
+    <script src="maincnn.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Sentiment Analysis</title>
+    <style> 
+        html { 
+            background: url('./Image/Web_BG.jpg') no-repeat center fixed; 
+            background-size: cover;
+        }
+        .sample_card {
+            text-align: center; /* Center the content */
+        }
+
+        .sample_card img {
+            display: block; /* Ensure the image is on its own line */
+            margin: 0 auto; /* Center the image */
+        }
+
+        .sample_card p {
+            margin-top: 10px; /* Add some space between the image and text */
+        }
+    </style>
+</head>
+<body>
+    <div class="Header">
+        <div class="topbar"></div>
+        <div class="logo">
+            <img src="Image/web_logo_banner.png" id="logobanner">
+            <a href="Welcome.html" ><img src="Image/logo.png" id="logo"></a>
+        </div>
+        <span class="refresh"><a href="indexcnn.html"><img src="Image/web_refresh.png"></a> </span>
+        <img src="Image/Web_photo_decoration.jpg" id="decobg" width="cover">
+    </div>
+    <div class="inputsection">
+        <h1 class="thaiplease">โปรดใส่ ข้อความของคุณ</h1>
+        <div class="notify" id="notifyMessage">กรุณากรอกข้อความ</div>
+        <!-- input -->
+        <textarea id="input_sentence" placeholder="กรุณาพิมพ์ข้อความที่นี่..." name="input_sentence" rows="4" cols="50"></textarea>
+    </div>
+    <!-- button -->
+    <div class="press">
+        <button class="predicter" onclick="predict()">วิเคราะห์ข้อความ</button>                   
+    </div>
+    <div class="status_bar">
+        <hr class="lowerhr">
+        <div class="upper_status">
+            <h1 class="result">ผลลัพธ์</h1>
+        </div>
+        <div class="sample_card">
+            <h1 id="sample_text"></h1>
+            <div id="prediction">
+                <h1 id="prediction_text"></h1>
+            </div>
+        </div>  
+    </div>    
+</body>
+</html>

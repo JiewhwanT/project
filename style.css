@@ -1,0 +1,299 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.Header{
+position: relative;
+}
+.topbar{
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 1;
+   background: linear-gradient(29deg, rgba(220,226,229,1) 45%, rgba(58,138,150,1) 100%);
+   height: 100px;
+   border-bottom-right-radius: 20px;
+   box-shadow: 1px 1px 5px #494949;
+}
+#logobanner{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 115px;
+    width: 100px;
+}
+#logo{
+    position: relative;
+    z-index: 3;
+    top: 25px;
+    left: 8px;
+    transition: 0.8s;
+    
+}
+.refresh{
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    z-index: 2;
+    transition: 0.8s;
+}
+#decobg{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 190px;
+    width: 100%;
+}
+h1.eng{
+    position: relative;
+    color: #274148;
+    font-family: Kanit;
+    font-size: 35px;
+    font-weight: 275;
+    text-shadow: 1px 1px 3px #0000006c;
+}
+h1.thai{
+    position: relative;
+    top: -70px;
+    font-size: 45px;
+    color: #484848;
+    font-family: Mitr;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px #0000006c;
+}
+h1.thaiplease{
+    position: relative;
+    color: #274148;
+    font-size: 30px;
+    font-family: Mitr;
+    font-weight: 450;
+    text-shadow: 1px 1px 3px #0000002d;
+}
+h1.thaihome{
+    position: relative;
+    top: -70px;
+    font-size: 40px;
+    color: #fff;
+    font-family: Mitr;
+    font-weight: 400;
+    text-shadow: 1px 1px 7px #0000008f;
+    margin-bottom: 25+6+1px;
+}
+h1.thaihomesmall{
+    position: relative;
+    top: -90px;
+    font-size: 25px;
+    color: #fff;
+    font-family: Mitr;
+    font-weight: 300;
+    text-shadow: 1px 1px 7px #0000007c;
+}
+#input_sentence{
+    position: relative;
+    text-align : left;
+    width: 100%;
+    height: 150px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 150px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    font-family: Mitr;
+    border-radius: 20px;
+    overflow: hidden;
+    font-size: 20px;
+    border: none;
+    background-color: #DCE2E5;
+    box-shadow: 1px 1px 10px #2c2c2c69;
+}
+.sample_card {
+    text-align: center;
+    color: #274148;
+    font-family: Mitr;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 1px 1px 3px #00000048;
+    font-size: 30px;
+}
+.sentiment-container img {
+    display: block; /* Ensure the image is on its own line */
+    margin: 0 auto; /* Center the image */
+}
+
+.sentiment-container p {
+    margin-top: 10px; /* Add some space between the image and text */
+}
+hr.upperhr{
+    position: relative;
+    top: -30px;
+    margin-left: 0;
+    border: 3.5px solid #1C7979;
+    width: 295px;
+    border-radius: 5px;
+}
+hr.lowerhr{
+    position: relative;
+    border: 3.5px solid #1C7979;
+    border-radius: 5px;
+    margin-left: 97px;
+    margin-right: 97px;
+}
+.result{
+    position: relative;
+    color: #274148;
+    font-family: Kanit;
+    font-weight: 300;
+    text-align: center;
+    background-color: #DCE2E5;
+    text-shadow: 1px 1px 3px #0000006c;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #494949;
+    width: 5em;
+    
+    
+}
+.notify {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 9999;
+}
+.Home_Logo{
+    position: relative;
+    top: -80px;
+    opacity: 45%;
+}
+
+.reset:hover,.predicter:hover,.start_button:hover{
+    background-color: #3e8382;
+    transform: translateY(-5px);
+}
+.refresh:hover,#logo:hover{
+    transform: translateY(-5px);
+    opacity: 70%;
+}
+.inputsection{
+    margin-left: 97px;
+    margin-right: 97px;
+}
+.status_bar{
+    position: relative;
+    
+}
+.upper_status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.press{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Mitr;
+    display: flex;
+    cursor: pointer; 
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center; /
+    
+    
+    
+}
+.predicter{
+    color: #fff;
+    background-color: #62BDBC;
+    text-shadow: 1px 1px 5px #000000;
+    border-radius: 10px;
+    border: none;
+    transition: 0.8s;  
+    width: 200px;
+    height: 60px;
+    box-shadow: 1px 1px 5px #00000025;
+    font-family: Mitr;
+    text-align: center;
+    font-weight: 400;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.HomeBox{
+    position: relative;
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-top: 200px;
+    text-align: center;
+}
+.start_button{
+    display: inline-block;
+    background: rgb(98,189,188);
+    text-decoration: none;
+    border-radius: 10px;
+    width: 175px;
+    height: 55px;
+    font-size: 23px;
+    font-family: Mitr;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.8s; 
+    box-shadow: 1px 1px 5px #00000079;
+    text-shadow: 1px 1px 5px #0000008f;;
+    position: relative;
+    top: -60px;
+    padding-top: 15px;
+    font-weight: 400;
+}
+.choose_button{
+    background: rgb(98,189,188);
+    text-decoration: none;
+    display: inline-block   ;
+    border-radius: 25px;
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    font-family: Mitr;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.8s; 
+    box-shadow: 1px 1px 5px #00000079;
+    text-shadow: 1px 1px 5px #0000008f;;
+    position: relative;
+    margin-right: 40px;
+    padding-top: 25px;
+}
+.choose_button_box{
+    font-size: 40px;
+    font-family: Kanit;
+    color: #f7f2f2;
+    text-shadow: 1px 1px 5px #0000008f;;
+    position: relative;
+    text-align: center;
+    top: -90px;
+}
+.choose_button:hover{
+    background-color: #3e8382;
+    transform: translateY(-5px);
+    opacity: 55%;
+}
+#choose_Head{
+    font-size: 60px;
+    position: relative;
+    font-weight: 300;
+    font-family: Mitr;
+}

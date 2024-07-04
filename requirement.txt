@@ -1,0 +1,6 @@
+torch
+tensorflow 
+pythainlp
+fastapi
+uvicorn
+transformers
